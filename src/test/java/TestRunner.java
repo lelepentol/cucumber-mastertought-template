@@ -23,7 +23,6 @@ public class TestRunner {
 	private TestNGCucumberRunner testNGCucumberRunner;
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() {
-		System.out.println("Cucumber Test Class Before");
 		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
 	}
 	

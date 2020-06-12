@@ -13,10 +13,6 @@ import io.appium.java_client.android.AndroidDriver;
 public class AndroidSetup {
 	public AndroidDriver driver;
 	public WebDriverWait wait;
-//	//Elements
-//	String secondNewJob = "//android.widget.FrameLayout[2]/android.widget.LinearLayout/" +
-//			"android.widget.RelativeLayout/android.widget.ImageView";
-	
 	public void set_up()    {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "Pixel 2 API 28");
@@ -24,8 +20,6 @@ public class AndroidSetup {
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "9.0");
 		caps.setCapability("skipUnlock","true");
-//		caps.setCapability("appPackage", "com.test.dishisit");
-//		caps.setCapability("appActivity","host.exp.exponent.MainActivity");
 		caps.setCapability("appPackage", "com.android.calculator2");
         caps.setCapability("appActivity","com.android.calculator2.Calculator");
 		caps.setCapability("noReset","false");
